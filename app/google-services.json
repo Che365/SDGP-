@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "657846180689",
+    "project_id": "sdgp-front-end",
+    "storage_bucket": "sdgp-front-end.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657846180689:android:625ff0c19df54ad6a41170",
+        "android_client_info": {
+          "package_name": "com.example.sdgpfrontend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoTnMpgW7sG8a8-0ki_Nd_y8sVD6Ll5FY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
