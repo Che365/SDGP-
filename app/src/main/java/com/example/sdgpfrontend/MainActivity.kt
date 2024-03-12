@@ -21,6 +21,12 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
 
+    val NextButton =findViewById<Button>(R.id.next)
+        NextButton.setOnClickListener {
+            startActivity(Intent(this,UploadPhotos::class.java))
+
+        }
+
     val CapButton =findViewById<Button>(R.id.capbutton)
         CapButton.setOnClickListener {
         openCamera()
