@@ -35,13 +35,11 @@ class UploadPhotos : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == REQ_CODE && resultCode == RESULT_OK && data !=null && data.data !=null){
-            val imguri : Uri ?= data.data
-
-            chosenimage.setImageURI(imguri)
-            chosenimage.visibility = View.VISIBLE
-
+           imguri = data.data
+            val imageview: Bitmap =MediaStore.Images.Media.getBitmap(contentResolver,imguri)
+            val chosenImage = findViewById<ImageView>(R.id.chosenimage)
+            chosenImage.setImageBitmap(imageview)
         }
-    }
+    }}
 
 
-}
